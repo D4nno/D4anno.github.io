@@ -1,0 +1,253 @@
+<head><meta charset="UTF-8">
+<link rel="stylesheet" href="style.css"></head>
+  <style>@import url("images/css2");*{margin:0;padding:0;box-sizing:border-box;}#header{background-color:#0d1b2a;color:#ffffff;font-family:'Poppins',sans-serif;position:sticky;top:0;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,0.1);}#header .header-container{display:flex;justify-content:space-between;align-items:center;padding:0.75rem 2rem;max-width:1400px;margin:0 auto;}#header .logo-link{display:flex;align-items:center;text-decoration:none;}#header .logo-link img{height:80px;width:auto;object-fit:contain;}#header nav{display:flex;align-items:center;}#header .nav-links{display:flex;list-style:none;gap:2rem;align-items:center;}#header .nav-links li{position:relative;}#header .nav-links a{color:#ffffff;text-decoration:none;font-weight:400;font-size:1rem;padding:0.5rem 0.75rem;border-radius:4px;transition:all 0.3s ease;display:block;}#header .nav-links a:hover{background-color:rgba(255,255,255,0.1);color:#f0f0f0;}#header .hamburger{display:none;flex-direction:column;cursor:pointer;gap:5px;padding:0.5rem;}#header .hamburger span{width:28px;height:3px;background-color:#ffffff;border-radius:2px;transition:all 0.3s ease;}#header .hamburger.active span:nth-child(1){transform:rotate(45deg) translate(8px,8px);}#header .hamburger.active span:nth-child(2){opacity:0;}#header .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(7px,-7px);}@media(max-width:768px){#header .header-container{padding:0.75rem 1rem;}#header .logo-link img{height:60px;}#header .hamburger{display:flex;}#header nav{position:fixed;top:0;right:-100%;width:280px;height:100vh;background-color:#0d1b2a;flex-direction:column;justify-content:flex-start;padding-top:5rem;transition:right 0.3s ease;box-shadow:-2px 0 10px rgba(0,0,0,0.3);}#header nav.active{right:0;}#header .nav-links{flex-direction:column;gap:0;width:100%;padding:0;}#header .nav-links li{width:100%;border-bottom:1px solid rgba(255,255,255,0.1);}#header .nav-links a{padding:1.25rem 2rem;font-size:1.1rem;border-radius:0;}#header .nav-links a:hover{background-color:rgba(255,255,255,0.15);}}</style><header id="header" class="">
+<meta charset="UTF-8">
+<div class="header-container"><a href="" class="logo-link"><img src="images/695d23ae93b51.png" alt="Perseverance -  Walking Leith: A Local's Perspective Logo" class=""></a><div class="hamburger" id="hamburger"><span class=""></span><span class=""></span><span class=""></span></div><nav id="nav-menu" class=""><ul class="nav-links"><li class=""><a class="" href="about_paul.html">About Paul</a></li><li class=""><a class="" href="the_walk.html">The Walk</a></li><li class=""><a class="" href="book_a_tour.html">Book a Tour</a></li><li class=""><a class="" href="home.html">Home</a></li></ul></nav></div></header><script>document.addEventListener('DOMContentLoaded',function(){const hamburger=document.getElementById('hamburger');const navMenu=document.getElementById('nav-menu');const navLinks=document.querySelectorAll('#header .nav-links a');hamburger.addEventListener('click',function(){hamburger.classList.toggle('active');navMenu.classList.toggle('active');});navLinks.forEach(link=>{link.addEventListener('click',function(){if(window.innerWidth<=768){hamburger.classList.remove('active');navMenu.classList.remove('active');}});});document.addEventListener('click',function(event){const isClickInsideNav=navMenu.contains(event.target);const isClickOnHamburger=hamburger.contains(event.target);if(!isClickInsideNav&&!isClickOnHamburger&&navMenu.classList.contains('active')){hamburger.classList.remove('active');navMenu.classList.remove('active');}});});</script>
+  
+  <section class="walk-page-header">
+    <div class="walk-header-content">
+      <h1 class="walk-page-title">The Walk</h1>
+      <p class="walk-page-subtitle">What to Expect on Your Leith Walking Tour</p>
+    </div>
+  </section>
+
+  <section class="walk-overview-section">
+    <div class="walk-overview-container">
+      <div class="walk-overview-text">
+        <h2 class="">An Adaptable, Authentic Experience</h2>
+        <p class="">This isn't a rigid, scripted tour where you're rushed from one landmark to the next. Instead, this is a genuine exploration of Leith—a place with layers of history, character, and living culture.</p>
+        <p class="">The route and content adapt to your group's interests and questions. Whether you're fascinated by maritime heritage, social transformation, or the hidden details that locals notice, Paul adjusts the walk accordingly.</p>
+        <p class="">Expect a focus on street-level observation and storytelling. You'll stop, look around, discuss what you see, and understand the place beyond the surface. It's a balance of walking, pausing, absorbing, and connecting with Leith's authentic character.</p>
+      </div>
+      <div class="walk-overview-image" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+        <img src="images/695d281bb4df0.png" alt="Paul Holmes with walking tour group" class="">
+      </div>
+    </div>
+  </section>
+
+  <section class="walk-topics-section">
+    <div class="walk-topics-container">
+      <h2 class="walk-topics-heading">What You Might Explore</h2>
+      <div class="walk-topics-grid">
+        <div class="walk-topic-card" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+          <div class="walk-topic-icon">⚓</div>
+          <h3 class="">Maritime History</h3>
+          <p class="">Discover Leith's rich port heritage, seafaring connections, historic docks, and the ships that shaped this waterfront community for centuries.</p>
+        </div>
+        <div class="walk-topic-card" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+          <div class="walk-topic-icon">🏘️</div>
+          <h3 class="">Social Change</h3>
+          <p class="">Explore decades of decline and renewal, understanding the community resilience that transformed Leith from industrial decline to vibrant regeneration.</p>
+        </div>
+        <div class="walk-topic-card" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+          <div class="walk-topic-icon">✨</div>
+          <h3 class="">Famous Names</h3>
+          <p class="">Learn about notable people connected to Leith—writers, artists, historical figures who lived, worked, and left their mark on this unique neighbourhood.</p>
+        </div>
+        <div class="walk-topic-card" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+          <div class="walk-topic-icon">💚</div>
+          <h3 class="">Living Character</h3>
+          <p class="">Experience how Leith feels today. Understand what locals notice, appreciate the current culture, and see the neighbourhood through residents' eyes.</p>
+        </div>
+        <div class="walk-topic-card" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+          <div class="walk-topic-icon">🔍</div>
+          <h3 class="">Hidden Details</h3>
+          <p class="">Uncover stories not found on plaques. Learn about architectural quirks, street name origins, and the details that reveal Leith's layered past.</p>
+        </div>
+      </div>
+      <div class="walk-topics-note">
+        💡 The walk is shaped by your interests. Ask questions. Share curiosities. Paul adapts to what matters to you.
+      </div>
+    </div>
+  </section>
+
+  <section class="walk-practical-section">
+    <div class="walk-practical-container">
+      <h2 class="walk-practical-heading">Practical Information</h2>
+      <div class="walk-practical-grid">
+        <div class="walk-practical-item" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+          <div class="walk-practical-item-icon">⏱️</div>
+          <h3 class="">Duration</h3>
+          <p class="">Approximately 2 hours of relaxed exploration through Leith's streets and stories.</p>
+        </div>
+        <div class="walk-practical-item" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+          <div class="walk-practical-item-icon">🚶</div>
+          <h3 class="">Pace</h3>
+          <p class="">Unhurried and comfortable, with plenty of stops for observation, discussion, and questions.</p>
+        </div>
+        <div class="walk-practical-item" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+          <div class="walk-practical-item-icon">📍</div>
+          <h3 class="">Meeting Point</h3>
+          <p class="">Convenient location in central Leith, confirmed upon booking confirmation.</p>
+        </div>
+        <div class="walk-practical-item" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+          <div class="walk-practical-item-icon">♿</div>
+          <h3 class="">Accessibility</h3>
+          <p class="">On foot through relatively flat terrain. Suitable for most fitness levels. Contact us for specific accessibility questions.</p>
+        </div>
+        <div class="walk-practical-item" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+          <div class="walk-practical-item-icon">👥</div>
+          <h3 class="">Group Size</h3>
+          <p class="">Small groups ensure better interaction, personal attention, and meaningful conversation throughout the walk.</p>
+        </div>
+        <div class="walk-practical-item" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+          <div class="walk-practical-item-icon">🎒</div>
+          <h3 class="">What to Bring</h3>
+          <p class="">Comfortable walking shoes and weather-appropriate clothing. Edinburgh weather can be unpredictable!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="walk-route-section">
+    <div class="walk-route-container">
+      <div class="walk-route-content">
+        <h2 class="">The Route Through Leith</h2>
+        <p class="">The specific route varies based on your group's interests and current conditions. What remains constant is the focus on areas that best reflect Leith's character and history.</p>
+        <p class="">We'll cover key locations that tell the story of this remarkable neighbourhood—from waterfront heritage to residential streets, from historic buildings to contemporary regeneration.</p>
+        <p class="">The emphasis is always on stopping to look, discuss, and absorb. This isn't about ticking off landmarks; it's about understanding place, context, and the layers of history beneath your feet.</p>
+        <p class="">You'll leave with a genuine feel for Leith—not just facts, but understanding.</p>
+      </div>
+      <div class="walk-route-visual" style="opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s;">
+        <img src="images/695d281ea0591.png" alt="Leith streets map visual" class="">
+      </div>
+    </div>
+  </section>
+
+  <section class="walk-testimonials-section">
+    <div class="walk-testimonials-container">
+      <h2 class="walk-testimonials-heading">What Makes This Walk Special</h2>
+      <div class="walk-testimonials-slider">
+        <div class="walk-testimonials-track">
+          <div class="walk-testimonial-card">
+            <p class="walk-testimonial-quote">"It felt like being shown around by a friend who genuinely cares about this place. Paul's knowledge and adaptable approach made the experience personal and memorable. We saw Leith through local eyes."</p>
+            <p class="walk-testimonial-author">— Sarah M., London</p>
+          </div>
+          <div class="walk-testimonial-card">
+            <p class="walk-testimonial-quote">"Not your typical tour. Paul listened to what interested us and adjusted the route accordingly. The conversational style and authentic storytelling gave us a deeper understanding of Leith than any guidebook could."</p>
+            <p class="walk-testimonial-author">— James &amp; Claire, Glasgow</p>
+          </div>
+          <div class="walk-testimonial-card">
+            <p class="walk-testimonial-quote">"I've lived in Edinburgh for years but never truly understood Leith until this walk. Paul's insights revealed layers of history and character I'd completely missed. Highly recommended for locals and visitors alike."</p>
+            <p class="walk-testimonial-author">— David R., Edinburgh</p>
+          </div>
+        </div>
+      </div>
+      <div class="walk-testimonials-controls">
+        <button class="walk-testimonial-dot" data-slide="0"></button>
+        <button class="walk-testimonial-dot" data-slide="1"></button>
+        <button class="walk-testimonial-dot active" data-slide="2"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="walk-cta-section">
+    <div class="walk-cta-container">
+      <h2 class="walk-cta-heading">Ready to Experience Leith?</h2>
+      <p class="walk-cta-text">Join Paul on an authentic walking tour that reveals the real character of this remarkable Edinburgh neighbourhood.</p>
+      <div class="walk-cta-buttons">
+        <a href="#" class="walk-cta-primary">Book Your Walk Now</a>
+        <a href="#" class="walk-cta-secondary">Questions? Contact Paul</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="walk-footer">
+    <div class="walk-footer-container">
+      <div class="walk-footer-content">
+        <div class="walk-footer-section">
+          <h3 class="">About</h3>
+          <p class="">Authentic walking tours of Leith led by local guide Paul Holmes, revealing the history, character, and hidden stories of Edinburgh's historic port neighbourhood.</p>
+        </div>
+        <div class="walk-footer-section">
+          <h3 class="">Quick Links</h3>
+          <p class=""><a href="#" class="">Home</a></p>
+          <p class=""><a href="#" class="">Book a Tour</a></p>
+          <p class=""><a href="#" class="">About Paul</a></p>
+          <p class=""><a href="#" class="">Contact</a></p>
+        </div>
+        <div class="walk-footer-section">
+          <h3 class="">Contact</h3>
+          <p class="">Email: info@walkingleith.com</p>
+          <p class="">Phone: +44 (0) 131 XXX XXXX</p>
+          <p class="">Location: Leith, Edinburgh</p>
+        </div>
+      </div>
+      <div class="walk-footer-bottom">
+        <p class="">© 2024 Walking Leith | All Rights Reserved | Perseverance</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){const hamburger=document.getElementById('hamburger');const navMenu=document.getElementById('nav-menu');const navLinks=document.querySelectorAll('#header .nav-links a');hamburger.addEventListener('click',function(){hamburger.classList.toggle('active');navMenu.classList.toggle('active');});navLinks.forEach(link=>{link.addEventListener('click',function(){if(window.innerWidth<=768){hamburger.classList.remove('active');navMenu.classList.remove('active');}});});document.addEventListener('click',function(event){const isClickInsideNav=navMenu.contains(event.target);const isClickOnHamburger=hamburger.contains(event.target);if(!isClickInsideNav&&!isClickOnHamburger&&navMenu.classList.contains('active')){hamburger.classList.remove('active');navMenu.classList.remove('active');}});});
+// Testimonials Slider
+const testimonialsTrack = document.querySelector('.walk-testimonials-track');
+const testimonialDots = document.querySelectorAll('.walk-testimonial-dot');
+let currentSlide = 0;
+const totalSlides = 3;
+let autoPlayInterval;
+function goToSlide(slideIndex) {
+currentSlide = slideIndex;
+const offset = -slideIndex * 100;
+testimonialsTrack.style.transform = 'translateX(${offset}%)';
+testimonialDots.forEach((dot, index) => {
+dot.classList.toggle('active', index === slideIndex);
+});
+}
+function nextSlide() {
+const next = (currentSlide + 1) % totalSlides;
+goToSlide(next);
+}
+function startAutoPlay() {
+autoPlayInterval = setInterval(nextSlide, 5000);
+}
+function stopAutoPlay() {
+clearInterval(autoPlayInterval);
+}
+testimonialDots.forEach(dot => {
+dot.addEventListener('click', (e) => {
+const slideIndex = parseInt(e.target.getAttribute('data-slide'));
+goToSlide(slideIndex);
+stopAutoPlay();
+startAutoPlay();
+});
+});
+startAutoPlay();
+// Smooth scroll for CTA buttons
+const ctaButtons = document.querySelectorAll('.walk-cta-primary, .walk-cta-secondary');
+ctaButtons.forEach(button => {
+button.addEventListener('click', (e) => {
+e.preventDefault();
+const href = button.getAttribute('href');
+if (href && href !== '#') {
+window.location.href = href;
+}
+});
+});
+// Intersection Observer for fade-in animations
+const observerOptions = {
+threshold: 0.1,
+rootMargin: '0px 0px -50px 0px'
+};
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.style.opacity = '1';
+entry.target.style.transform = 'translateY(0)';
+}
+});
+}, observerOptions);
+const animatedElements = document.querySelectorAll('.walk-topic-card, .walk-practical-item, .walk-overview-image, .walk-route-visual');
+animatedElements.forEach(el => {
+el.style.opacity = '0';
+el.style.transform = 'translateY(30px)';
+el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+observer.observe(el);
+});
+
+
+
+</script>
